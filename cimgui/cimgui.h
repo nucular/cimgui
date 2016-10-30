@@ -497,3 +497,15 @@ CIMGUI_API void ImGuiListClipper_End(ImGuiListClipper* clipper);
 CIMGUI_API bool ImGuiListClipper_Step(ImGuiListClipper* clipper);
 CIMGUI_API int ImGuiListClipper_GetDisplayStart(ImGuiListClipper* clipper);
 CIMGUI_API int ImGuiListClipper_GetDisplayEnd(ImGuiListClipper* clipper);
+
+// imgui_dock
+typedef int ImGuiWindowFlags;
+typedef int ImGuiDockSlot;
+CIMGUI_API void             igBeginDockspace();
+CIMGUI_API void             igEndDockspace();
+CIMGUI_API void             igShutdownDock();
+CIMGUI_API void             igSetNextDock(ImGuiDockSlot slot);
+CIMGUI_API bool             igBeginDock(CONST char* label, bool* opened, ImGuiWindowFlags extra_flags);
+CIMGUI_API void             igEndDock();
+CIMGUI_API void             igSetDockActive();
+CIMGUI_API void             igDockDebugWindow();

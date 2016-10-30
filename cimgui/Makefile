@@ -6,10 +6,12 @@ OBJS = cimgui.o
 OBJS += fontAtlas.o
 OBJS += drawList.o
 OBJS += listClipper.o
+OBJS += dock.o
 #OBJS += test.o
 OBJS += ../imgui/imgui.o
 OBJS += ../imgui/imgui_draw.o
 OBJS += ../imgui/imgui_demo.o
+OBJS += ../imgui_dock/imgui_dock.o
 
 UNAME_S := $(shell uname -s)
 
